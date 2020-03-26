@@ -1,0 +1,3 @@
+/home/liam/udacity/project_buildMyWorld/build/CMakeFiles/edit_cache.dir
+/home/liam/udacity/project_buildMyWorld/build/CMakeFiles/rebuild_cache.dir
+/home/liam/udacity/project_buildMyWorld/build/CMakeFiles/welcome.dir
