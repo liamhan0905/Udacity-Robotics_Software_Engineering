@@ -30,38 +30,68 @@ void process_image_callback(const sensor_msgs::Image img)
     int middle = 0;
     int right = 0;
     // ROS_INFO_STREAM("Size: " + img.height * img.step);
-    for (int i = 0; i < img.height * img.step; i++) 
+    // for (int i = 0; i < img.height * img.step; i++)
+    // {
+    //    // ROS_INFO_STREAM(std::to_string(img.data[i]));
+    //     if(img.data[i] == white_pixel)
+    //     {
+    //         section = i%img.step;
+    //         if (section >= 0 && section < img.step / 3){
+    //             left++;
+    //             //ROS_INFO_STREAM("LEFT");
+    //         }
+    //         else if (section >= img.step / 3 && section < img.step *2/3){
+    //             middle++;
+    //             //ROS_INFO_STREAM("Middle");
+    //         }
+    //         else if (section >= img.step * 2 / 3){
+    //             right++;
+    //             //ROS_INFO_STREAM("Right");
+    //         }
+    //     }
+    // }
+
+    for (int i = 0; i < img.height * img.step; i += 3)
     {
-       // ROS_INFO_STREAM(std::to_string(img.data[i]));
-        if(img.data[i] == white_pixel)
+        // for (int j = 0; j < 3; j++ )
+        // {
+        if (img.data[i] == white_pixel && img.data[i + 1] == white_pixel && img.data[i + 2] == white_pixel)
         {
-            section = i%img.step;
-            if (section >= 0 && section < img.step / 3){
+            section = i % img.step; // the remainder will point to the index
+
+            if (section >= 0 && section < img.step / 3)
+            {
                 left++;
-                //ROS_INFO_STREAM("LEFT");
+                // ROS_INFO_STREAM("LEFT");
             }
-            else if (section >= img.step / 3 && section < img.step *2/3){
+            else if (section >= img.step / 3 && section < img.step * 2 / 3)
+            {
                 middle++;
-                //ROS_INFO_STREAM("Middle");
+                // ROS_INFO_STREAM("Middle");
             }
-            else if (section >= img.step * 2 / 3){
+            else if (section >= img.step * 2 / 3)
+            {
                 right++;
-                //ROS_INFO_STREAM("Right");
+                // ROS_INFO_STREAM("Right");
             }
         }
     }
 
-    if (left > middle && left > right){
-        drive_robot(0.1,0.2);
+    if (left > middle && left > right)
+    {
+        drive_robot(0.2, 0.5);
     }
-    else if (middle > left && middle > right){
-        drive_robot(0.2,0);
+    else if (middle > left && middle > right)
+    {
+        drive_robot(0.2, 0);
     }
-    else if (right > middle && right > left){
-        drive_robot(0.1,-0.2);
+    else if (right > middle && right > left)
+    {
+        drive_robot(0.2, -0.5);
     }
-    else{
-        drive_robot(0,0);
+    else
+    {
+        drive_robot(0, 0);
     }
 
     // TODO: Loop through each pixel in the image and check if there's a bright white one
@@ -70,11 +100,10 @@ void process_image_callback(const sensor_msgs::Image img)
     // Request a stop when there's no white ball seen by the camera
 }
 
-
-int main(int argc, char** argv)
+int main(int argc, char **argv)
 {
     // Initialize the process_image node and create a handle to it
-    
+
     ros::init(argc, argv, "process_image");
     ros::NodeHandle n;
 
