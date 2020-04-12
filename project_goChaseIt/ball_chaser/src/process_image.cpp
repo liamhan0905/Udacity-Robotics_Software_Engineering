@@ -79,15 +79,18 @@ void process_image_callback(const sensor_msgs::Image img)
 
     if (left > middle && left > right)
     {
-        drive_robot(0.2, 0.5);
+        //ROS_INFO_STREAM("LEFT");
+        drive_robot(0.2, 0.3);
     }
     else if (middle > left && middle > right)
     {
-        drive_robot(0.2, 0);
+        //ROS_INFO_STREAM("Middle");
+        drive_robot(0.2, 0.0);
     }
     else if (right > middle && right > left)
     {
-        drive_robot(0.2, -0.5);
+        // ROS_INFO_STREAM("Right");
+        drive_robot(0.2, -0.3);
     }
     else
     {

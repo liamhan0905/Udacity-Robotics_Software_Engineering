@@ -12,14 +12,14 @@ ros::Publisher motor_command_publisher;
 // This function should publish the requested linear x and angular velocities to the robot wheel joints
 // After publishing the requested velocities, a message feedback should be returned with the requested wheel velocities
 
-bool handle_drive_request(ball_chaser::DriveToTarget::Request& req,
-    ball_chaser::DriveToTarget::Response& res)
+bool handle_drive_request(ball_chaser::DriveToTarget::Request &req,
+                          ball_chaser::DriveToTarget::Response &res)
 {
     ROS_INFO("DriveToTarget Request received - linear_x:%1.2f, angular_z:%1.2f", (float)req.linear_x, (float)req.angular_z);
 
     // Create a motor_command object of type geometry_msgs::Twist
     geometry_msgs::Twist motor_command;
-    // Set wheel velocities, forward [0.5, 0.0]
+
     motor_command.linear.x = req.linear_x;
     motor_command.angular.z = req.angular_z;
     // Publish angles to drive the robot
@@ -30,7 +30,7 @@ bool handle_drive_request(ball_chaser::DriveToTarget::Request& req,
     return true;
 }
 
-int main(int argc, char** argv)
+int main(int argc, char **argv)
 {
     // Initialize a ROS node
     ros::init(argc, argv, "drive_bot");
@@ -42,7 +42,7 @@ int main(int argc, char** argv)
     motor_command_publisher = n.advertise<geometry_msgs::Twist>("/cmd_vel", 10);
 
     // (DONE) TODO: Define a drive /ball_chaser/command_robot service with a handle_drive_request callback function
-    ros::ServiceServer service = n.advertiseService("/ball_chaser/command_robot",handle_drive_request);
+    ros::ServiceServer service = n.advertiseService("/ball_chaser/command_robot", handle_drive_request);
     ROS_INFO("Ready to send commands");
     // TODO: Delete the loop, move the code to the inside of the callback function and make the necessary changes to publish the requested velocities instead of constant values
 
