@@ -13,33 +13,12 @@
     <param name="global_frame_id" value="map"/>
 
  <!-- If you choose to define initial pose here -->
-    <param name="initial_pose_x" value="-1.27"/>
-    <param name="initial_pose_y" value="8.8"/>
-    <param name="initial_pose_a" value="-1.5707"/>
-
- <!-- Overall Filter -->
-    <param name="min_particles" value="100"/>
-    <param name="max_particles" value="5000"/>
-    <param name="update_min_d" value="0.05"/>
-    <param name="update_min_a" value="0.05"/>
-
- <!-- Laser -->
-    <param name="laser_min_range" value="-1.0"/>
-    <param name="laser_max_range" value="-1.0"/>
-    <param name="laser_max_beams" value="70"/>
-    <param name="laser_z_hit" value="0.95"/>
-    <param name="laser_z_rand" value="0.05"/>
-
- <!-- Odometry -->
-    <param name="odom_model_type" value="diff-corrected"/>
-    <param name="odom_alpha1" value="0.01"/>
-    <param name="odom_alpha2" value="0.01"/>
-    <param name="odom_alpha3" value="0.01"/>
-    <param name="odom_alpha4" value="0.01"/>
-
+    <param name="initial_pose_x" value="-1.731"/>
+    <param name="initial_pose_y" value="8.596"/>
+    <param name="initial_pose_a" value="-1.552"/>
   </node>
 
-  <!-- Move Base -->
+ <!-- Move Base -->
   <node name="move_base" pkg="move_base" type="move_base" respawn="false" output="screen">
     <remap from="scan" to="drive_bot/laser/scan"/>
     <param name="base_global_planner" value="navfn/NavfnROS" />
