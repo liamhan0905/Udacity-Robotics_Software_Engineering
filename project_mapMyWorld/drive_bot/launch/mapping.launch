@@ -62,8 +62,8 @@
         <param name="frame_id"                    type="string" value="robot_footprint"/>
 
         <remap from="rgb/image"       to="$(arg rgb_topic)"/>
-        <remap from="camera/depth/image"     to="$(arg depth_topic)"/>
-        <remap from="camera/rgb/camera_info" to="$(arg camera_info_topic)"/>
+        <remap from="depth/image"     to="$(arg depth_topic)"/>
+        <remap from="rgb/camera_info" to="$(arg camera_info_topic)"/>
         <remap from="scan"            to="/scan"/>
     </node>
 
