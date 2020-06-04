@@ -31,13 +31,6 @@
     <dynamics damping="1.0" friction="1.0"/>
   </joint>
 
-
-
-
-
-
-
-
   <joint type="fixed" name="camera_joint">
     <origin xyz="0.2 0 0" rpy="0 0 0"/>
     <child link="camera"/>
@@ -51,7 +44,6 @@
     <parent link="chassis"/>
     <axis xyz="0 1 0" rpy="0 0 0"/>
   </joint>
-
 
   <joint name="camera_optical_joint" type="fixed">
     <origin xyz="0 0 0" rpy="-1.5707 0 -1.5707"/>
