@@ -1,0 +1,8 @@
+prefix=/home/liam/catkin_ws/src/build/devel
+
+Name: map
+Description: Description of map
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

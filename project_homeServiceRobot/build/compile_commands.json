@@ -1,0 +1,87 @@
+[
+{
+  "directory": "/home/liam/catkin_ws/src/build/gtest",
+  "command": "/usr/bin/g++-5   -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgmock_EXPORTS -I/usr/src/gmock/include -I/usr/src/gmock -I/usr/src/gtest/include -I/usr/src/gtest  -g -fPIC    -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gmock.dir/usr/src/gtest/src/gtest-all.cc.o -c /usr/src/gtest/src/gtest-all.cc",
+  "file": "/usr/src/gtest/src/gtest-all.cc"
+},
+{
+  "directory": "/home/liam/catkin_ws/src/build/gtest",
+  "command": "/usr/bin/g++-5   -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgmock_EXPORTS -I/usr/src/gmock/include -I/usr/src/gmock -I/usr/src/gtest/include -I/usr/src/gtest  -g -fPIC    -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gmock.dir/src/gmock-all.cc.o -c /usr/src/gmock/src/gmock-all.cc",
+  "file": "/usr/src/gmock/src/gmock-all.cc"
+},
+{
+  "directory": "/home/liam/catkin_ws/src/build/gtest",
+  "command": "/usr/bin/g++-5   -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgmock_main_EXPORTS -I/usr/src/gmock/include -I/usr/src/gmock -I/usr/src/gtest/include -I/usr/src/gtest  -g -fPIC    -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gmock_main.dir/usr/src/gtest/src/gtest-all.cc.o -c /usr/src/gtest/src/gtest-all.cc",
+  "file": "/usr/src/gtest/src/gtest-all.cc"
+},
+{
+  "directory": "/home/liam/catkin_ws/src/build/gtest",
+  "command": "/usr/bin/g++-5   -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgmock_main_EXPORTS -I/usr/src/gmock/include -I/usr/src/gmock -I/usr/src/gtest/include -I/usr/src/gtest  -g -fPIC    -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gmock_main.dir/src/gmock-all.cc.o -c /usr/src/gmock/src/gmock-all.cc",
+  "file": "/usr/src/gmock/src/gmock-all.cc"
+},
+{
+  "directory": "/home/liam/catkin_ws/src/build/gtest",
+  "command": "/usr/bin/g++-5   -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgmock_main_EXPORTS -I/usr/src/gmock/include -I/usr/src/gmock -I/usr/src/gtest/include -I/usr/src/gtest  -g -fPIC    -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gmock_main.dir/src/gmock_main.cc.o -c /usr/src/gmock/src/gmock_main.cc",
+  "file": "/usr/src/gmock/src/gmock_main.cc"
+},
+{
+  "directory": "/home/liam/catkin_ws/src/build/gtest/gtest",
+  "command": "/usr/bin/g++-5   -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgtest_EXPORTS -I/usr/src/gtest/include -I/usr/src/gtest  -g -fPIC    -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gtest.dir/src/gtest-all.cc.o -c /usr/src/gtest/src/gtest-all.cc",
+  "file": "/usr/src/gtest/src/gtest-all.cc"
+},
+{
+  "directory": "/home/liam/catkin_ws/src/build/gtest/gtest",
+  "command": "/usr/bin/g++-5   -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgtest_main_EXPORTS -I/usr/src/gtest/include -I/usr/src/gtest  -g -fPIC    -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gtest_main.dir/src/gtest_main.cc.o -c /usr/src/gtest/src/gtest_main.cc",
+  "file": "/usr/src/gtest/src/gtest_main.cc"
+},
+{
+  "directory": "/home/liam/catkin_ws/src/build/slam_gmapping/gmapping",
+  "command": "/usr/bin/g++-5   -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"gmapping\\\" -Dslam_gmapping_nodelet_EXPORTS -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/liam/catkin_ws/src/slam_gmapping/gmapping/src  -g -fPIC   -o CMakeFiles/slam_gmapping_nodelet.dir/src/slam_gmapping.cpp.o -c /home/liam/catkin_ws/src/slam_gmapping/gmapping/src/slam_gmapping.cpp",
+  "file": "/home/liam/catkin_ws/src/slam_gmapping/gmapping/src/slam_gmapping.cpp"
+},
+{
+  "directory": "/home/liam/catkin_ws/src/build/slam_gmapping/gmapping",
+  "command": "/usr/bin/g++-5   -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"gmapping\\\" -Dslam_gmapping_nodelet_EXPORTS -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/liam/catkin_ws/src/slam_gmapping/gmapping/src  -g -fPIC   -o CMakeFiles/slam_gmapping_nodelet.dir/src/nodelet.cpp.o -c /home/liam/catkin_ws/src/slam_gmapping/gmapping/src/nodelet.cpp",
+  "file": "/home/liam/catkin_ws/src/slam_gmapping/gmapping/src/nodelet.cpp"
+},
+{
+  "directory": "/home/liam/catkin_ws/src/build/slam_gmapping/gmapping",
+  "command": "/usr/bin/g++-5   -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"gmapping\\\" -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/liam/catkin_ws/src/slam_gmapping/gmapping/src  -g   -o CMakeFiles/slam_gmapping.dir/src/slam_gmapping.cpp.o -c /home/liam/catkin_ws/src/slam_gmapping/gmapping/src/slam_gmapping.cpp",
+  "file": "/home/liam/catkin_ws/src/slam_gmapping/gmapping/src/slam_gmapping.cpp"
+},
+{
+  "directory": "/home/liam/catkin_ws/src/build/slam_gmapping/gmapping",
+  "command": "/usr/bin/g++-5   -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"gmapping\\\" -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/liam/catkin_ws/src/slam_gmapping/gmapping/src  -g   -o CMakeFiles/slam_gmapping.dir/src/main.cpp.o -c /home/liam/catkin_ws/src/slam_gmapping/gmapping/src/main.cpp",
+  "file": "/home/liam/catkin_ws/src/slam_gmapping/gmapping/src/main.cpp"
+},
+{
+  "directory": "/home/liam/catkin_ws/src/build/slam_gmapping/gmapping",
+  "command": "/usr/bin/g++-5   -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"gmapping\\\" -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/liam/catkin_ws/src/slam_gmapping/gmapping/src  -g   -o CMakeFiles/slam_gmapping_replay.dir/src/slam_gmapping.cpp.o -c /home/liam/catkin_ws/src/slam_gmapping/gmapping/src/slam_gmapping.cpp",
+  "file": "/home/liam/catkin_ws/src/slam_gmapping/gmapping/src/slam_gmapping.cpp"
+},
+{
+  "directory": "/home/liam/catkin_ws/src/build/slam_gmapping/gmapping",
+  "command": "/usr/bin/g++-5   -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"gmapping\\\" -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/liam/catkin_ws/src/slam_gmapping/gmapping/src  -g   -o CMakeFiles/slam_gmapping_replay.dir/src/replay.cpp.o -c /home/liam/catkin_ws/src/slam_gmapping/gmapping/src/replay.cpp",
+  "file": "/home/liam/catkin_ws/src/slam_gmapping/gmapping/src/replay.cpp"
+},
+{
+  "directory": "/home/liam/catkin_ws/src/build/slam_gmapping/gmapping",
+  "command": "/usr/bin/g++-5   -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"gmapping\\\" -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/liam/catkin_ws/src/slam_gmapping/gmapping/src  -g   -o CMakeFiles/gmapping-rtest.dir/test/rtest.cpp.o -c /home/liam/catkin_ws/src/slam_gmapping/gmapping/test/rtest.cpp",
+  "file": "/home/liam/catkin_ws/src/slam_gmapping/gmapping/test/rtest.cpp"
+},
+{
+  "directory": "/home/liam/catkin_ws/src/build/turtlebot_interactions/turtlebot_interactive_markers",
+  "command": "/usr/bin/g++-5   -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"turtlebot_interactive_markers\\\" -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -g   -o CMakeFiles/turtlebot_marker_server.dir/src/turtlebot_marker_server.cpp.o -c /home/liam/catkin_ws/src/turtlebot_interactions/turtlebot_interactive_markers/src/turtlebot_marker_server.cpp",
+  "file": "/home/liam/catkin_ws/src/turtlebot_interactions/turtlebot_interactive_markers/src/turtlebot_marker_server.cpp"
+},
+{
+  "directory": "/home/liam/catkin_ws/src/build/turtlebot/turtlebot_teleop",
+  "command": "/usr/bin/g++-5   -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"turtlebot_teleop\\\" -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -g   -o CMakeFiles/turtlebot_teleop_joy.dir/src/turtlebot_joy.cpp.o -c /home/liam/catkin_ws/src/turtlebot/turtlebot_teleop/src/turtlebot_joy.cpp",
+  "file": "/home/liam/catkin_ws/src/turtlebot/turtlebot_teleop/src/turtlebot_joy.cpp"
+},
+{
+  "directory": "/home/liam/catkin_ws/src/build/turtlebot/turtlebot_description",
+  "command": "/usr/bin/g++-5   -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"turtlebot_description\\\"  -g   -o CMakeFiles/turtlebot_description_test_urdf.dir/test/test_urdf.cpp.o -c /home/liam/catkin_ws/src/turtlebot/turtlebot_description/test/test_urdf.cpp",
+  "file": "/home/liam/catkin_ws/src/turtlebot/turtlebot_description/test/test_urdf.cpp"
+}
+]
