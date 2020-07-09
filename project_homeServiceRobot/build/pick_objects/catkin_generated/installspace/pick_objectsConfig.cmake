@@ -177,7 +177,7 @@ foreach(library ${libraries})
   endif()
 endforeach()
 
-set(pick_objects_EXPORTED_TARGETS "")
+set(pick_objects_EXPORTED_TARGETS "pick_objects_generate_messages_cpp;pick_objects_generate_messages_eus;pick_objects_generate_messages_lisp;pick_objects_generate_messages_nodejs;pick_objects_generate_messages_py")
 # create dummy targets for exported code generation targets to make life of users easier
 foreach(t ${pick_objects_EXPORTED_TARGETS})
   if(NOT TARGET ${t})
@@ -214,7 +214,7 @@ foreach(depend ${depends})
   list(APPEND pick_objects_EXPORTED_TARGETS ${${pick_objects_dep}_EXPORTED_TARGETS})
 endforeach()
 
-set(pkg_cfg_extras "")
+set(pkg_cfg_extras "pick_objects-msg-extras.cmake")
 foreach(extra ${pkg_cfg_extras})
   if(NOT IS_ABSOLUTE ${extra})
     set(extra ${pick_objects_DIR}/${extra})

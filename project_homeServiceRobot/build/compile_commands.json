@@ -35,6 +35,11 @@
   "file": "/usr/src/gtest/src/gtest_main.cc"
 },
 {
+  "directory": "/home/liam/catkin_ws/src/build/pick_objects",
+  "command": "/usr/bin/g++-5   -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"pick_objects\\\" -I/home/liam/catkin_ws/src/pick_objects/include -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -g   -std=c++11 -o CMakeFiles/pick_objects.dir/src/pick_objects.cpp.o -c /home/liam/catkin_ws/src/pick_objects/src/pick_objects.cpp",
+  "file": "/home/liam/catkin_ws/src/pick_objects/src/pick_objects.cpp"
+},
+{
   "directory": "/home/liam/catkin_ws/src/build/slam_gmapping/gmapping",
   "command": "/usr/bin/g++-5   -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"gmapping\\\" -Dslam_gmapping_nodelet_EXPORTS -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/liam/catkin_ws/src/slam_gmapping/gmapping/src  -g -fPIC   -o CMakeFiles/slam_gmapping_nodelet.dir/src/slam_gmapping.cpp.o -c /home/liam/catkin_ws/src/slam_gmapping/gmapping/src/slam_gmapping.cpp",
   "file": "/home/liam/catkin_ws/src/slam_gmapping/gmapping/src/slam_gmapping.cpp"
