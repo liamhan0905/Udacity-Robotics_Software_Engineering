@@ -1,12 +1,10 @@
 ## Project
 
-For this project, I learned more in depth about the theory and math behind mapping and SLAM. At the end, I learned to implement a G mapping ROS package based on the grid based FastSLAM algorithm to map the environment and estimate the robot path. 
+For this project, I combined all the knowledge acquired throughout this course. Official ROS packages (gmapping, turtlebot_teleop, turtlebot_rviz_launchers, turtlebot_gazebo) were used to map the environment. ROS Navigation stack, which is based on the Dijkstra's, a variant of the Uniform Cost Search algorithm was used to plan the robot trajectory from start to goal position. The ROS navigation stack permits the robot to avoid any obstacle on its path by re-planning a new trajectory once the robot encounters them.
 
-At first, I assumed exact robot poses and learned how static environment could be mapped using occupancy grid mapping algorithm. The occupancy grid mapping decomposes the world into grid cells and implement binary Bayes filter to estimate the occupancy of the cells. However, in the real environment, poses as well as the map is unknown. 
+Next, a node was added to communicate with the ROS navigation stack and autonomously send successive goals for the robot to reach. Virtual objects were displayed on Rviz for the robot to pickup and drop off. There's an official ROS tutorial on how to display basic shapes on Rviz using visualization_msgs/Marker messages. Last package subscribed to the odometry topic to find the distance between the robot position and the target pickup/dropoff position. Once the robot approached the desired location, I was able to send a command to display or hide the virtual object to mimic the robot picking the object.
 
-This is where SLAM comes in. First, I learned about the two essential features of the SLAM problem (onlineSLAM vs. offlineSLAM and continues nature vs. discrete nature) The continues nature of SLAM is a problem because of the high dimension of the posterior whereas the discrete nature poses another challenge in that it creates a large number of correspondence values that exist.
-
-I then learned about FastSLAM which uses particle filter approach along with a low-dimensional extended Kalman filter to estimate to solve the SLAM problem. Next, I learned the difference between OnlineSLAM and  FullSLAM/OfflineSLAM and how Grid-based mapping addresses both problems. Grid-based FastSLAM uses MCL algorithm along with the occupancy grid mapping algorithm.
+Overall, this course was a very fun/challenging introduction to ROS. 
 
 [Demo Video](https://www.youtube.com/watch?v=1ODcRLEMUA0&feature=youtu.be)
 
