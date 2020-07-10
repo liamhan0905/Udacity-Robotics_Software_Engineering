@@ -9,3 +9,5 @@ This is where SLAM comes in. First, I learned about the two essential features o
 I then learned about FastSLAM which uses particle filter approach along with a low-dimensional extended Kalman filter to estimate to solve the SLAM problem. Next, I learned the difference between OnlineSLAM and  FullSLAM/OfflineSLAM and how Grid-based mapping addresses both problems. Grid-based FastSLAM uses MCL algorithm along with the occupancy grid mapping algorithm.
 
 [Demo Video](https://www.youtube.com/watch?v=1ODcRLEMUA0&feature=youtu.be)
+
+![Capture](https://user-images.githubusercontent.com/44885838/87116438-afad3300-c22a-11ea-94e8-d79700bf68a1.JPG)
