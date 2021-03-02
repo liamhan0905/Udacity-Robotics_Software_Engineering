@@ -3,9 +3,9 @@
 ## Overview
 Kalman Filter(KF) is an estimation algorithm that is very prominent in controls. It is used to estimate the value of a variable (e.g. position, velocity, temperature etc) in real-time as the data is being collected. It can take data with lot of uncertainty or noise in the measurement and provide a very accurate estimate in a fast manner.
 
-
-
-<img src="../resources/filter.JPG" align="center" width="100">
+<p align="center">
+  <img width="400"src="../resources/filter.JPG">
+</p>
 
 The KF takes in an initial assumption and noisy measurement as an input and filters out the noisy/uncertainty data. And eventually it distills desired state.
 
@@ -13,11 +13,16 @@ The KF takes in an initial assumption and noisy measurement as an input and filt
 ## Example
 Let's say there's an underwater robot measuring pressure as it swims through water. Pressure increases linearly with depth. In real life scenario, the sensor measurement will <span style="color:red">**NOT**</span> be accurate. There may be fluctuation in the water causing fluctuation in pressure as well as electrical noise from the sensor itself.
 
-![underwater robot](../resources/underwater_robot.JPG)
+<p align="center">
+  <img width="400"src="../resources/underwater_robot.JPG">
+</p>
 
 As pressure sensor starts collecting data, the KF begins to narrow in and estimate the actual pressure. In addition to the sensor readings, the KF also takes into account the uncertainty of the sensor readings which are specific to the sensor and the environment it is operating in. 
 
-![underwater robot](../resources/underwater_robot_plot.JPG)
+<p align="center">
+  <img width="400"src="../resources/underwater_robot_plot.JPG">
+</p>
+
 
 ---
 ## How does it work?
