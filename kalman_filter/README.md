@@ -11,7 +11,7 @@ The KF takes in an initial assumption and noisy measurement as an input and filt
 
 --- 
 ## Example
-Let's say there's an underwater robot measuring pressure as it swims through water. Pressure increases linearly with depth. In real life scenario, the sensor measurement will <span style="color:red">**NOT**</span> be accurate. There may be fluctuation in the water causing fluctuation in pressure as well as electrical noise from the sensor itself.
+Let's say there's an underwater robot measuring pressure as it swims through water. Pressure increases linearly with depth. In real life scenario, the sensor measurement will **NOT** be accurate. There may be fluctuation in the water causing fluctuation in pressure as well as electrical noise from the sensor itself.
 
 <p align="center">
   <img width="500"src="../resources/underwater_robot.JPG">
