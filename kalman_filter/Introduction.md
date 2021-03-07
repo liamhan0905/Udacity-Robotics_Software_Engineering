@@ -34,3 +34,42 @@ Iteration of two steps: <span style="color:yellow">**Measurement Update**</span>
 <p align="center">
   <img width="500"src="../resources/kf_flow.JPG">
 </p>
+
+x<sub>t</sub> : state
+
+z<sub>t</sub> : measurement
+
+u<sub>t</sub> : control action
+
+Cycle starts with an initial estimate which can be not accurate. The kalman filter will converge soon and yield good results very quickly. Then we iterate between the measurement update where we gain knowledge about our environment and the state prediction which causes us to lose knowledge due to the uncertainty of robot motion.
+
+### Measurement Update
+
+
+---
+## Types of Kalman Filter
+
+There is a standard Kalman Filter and two variations (EKF, UKF)
+- KF - linear
+- EKF (Extended KF) - nonlinear 
+- UKF (Unscented KF)- highly nonlinear (Not taught in this course)
+
+--- 
+## Advantages of KF
+- Unlike other algorithms that require a lot of data to make an estimate, a KF is able to do so with only few sensor measurements. It does so by using an initial guess and by taking into account the expected uncertainty of a sensor or movement.
+- Let's say a robot is using GPS data to identify its location. Today's GPS measurements are only accurate to a few meters. By only using the GPS data, you cannot obtain an accurate enough estimate of your robot's location. However this can be resolved by use of sensor fusion. Sensor fusion uses the Kalman filter to calculate a more accurate estimate using data from multiple sensors. Kalman filter takes into account the uncertainty of each sensor's measurements. 
+
+---
+
+<p align="center">
+  <img width="500"src="../resources/gaussian_1.JPG">
+</p>
+<p align="center">
+  <img width="500"src="../resources/gaussian_2.JPG">
+</p>
+<p align="center">
+  <img width="500"src="../resources/gaussian_3.JPG">
+</p>
+<p align="center">
+  <img width="500"src="../resources/gaussian_4.JPG">
+</p>
