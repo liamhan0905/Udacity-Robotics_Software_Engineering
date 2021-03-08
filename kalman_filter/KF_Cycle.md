@@ -50,7 +50,7 @@ The two Gaussians provide us with more information together than either Gaussian
 ---
 ## State Prediction
 
-Previously set posterior belief (mean: 27.5, variance: 2.25) now becomes the prior belief. This is the best estimate of the robot's current location. Next the robot executes a command, move forward 7.5m. The result of this motion is a Gaussian distribution centered at 7.5m with a variance of 5m. The calculation for posterior mean and variance is shown below.
+Recall that state prediction is the estimation that takes place after an inevitably uncertain motion. Previously set posterior belief (mean: 27.5, variance: 2.25) now becomes the prior belief. This is the best estimate of the robot's current location. Next the robot executes a command, move forward 7.5m. The result of this motion is a Gaussian distribution centered at 7.5m with a variance of 5m. The calculation for posterior mean and variance is shown below.
 
 <p align="center">
   <img width="600"src="../resources/s_p.JPG">
@@ -61,6 +61,8 @@ Previously set posterior belief (mean: 27.5, variance: 2.25) now becomes the pri
 <p align="center">
   <img width="600"src="../resources/m_u_4.JPG">
 </p>
+
+Below is an example of using a 1D Kalman Filter
 
 ```c++
 #include <iostream>
