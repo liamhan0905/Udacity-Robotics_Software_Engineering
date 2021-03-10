@@ -1,4 +1,4 @@
-# Multivariate Gaussian
+# Multidimensional Gaussian
 
 In our 1 dimensional example, the system state was represented by one variable. In N dimensional systems, the state is a vector with N state variables. In a two dimensional example, the two state variables can be set as the position and velocity of a robot. 
 
